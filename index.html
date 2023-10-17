@@ -10,6 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <title>Agency Innovations</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
@@ -24,18 +30,29 @@
 
           <ul class="navbar-links">
             <li>
-              <a href="./pages/advertise.html">Adversite</a>
-              <a href="./pages/support.html">supports</a>
-              <a href="./pages/about.html">abouts</a>
+              <a href="./pages/advertise.html">Advertise</a>
+            </li>
+            <li>
+              <a href="./pages/support.html">Support</a>
+            </li>
+            <li>
+              <a href="./pages/about.html">About</a>
             </li>
           </ul>
         </div>
 
         <div class="buttons navbar-links">
-          <img src="/images/lock.svg" alt="">
+          <img src="/images/lock.svg" alt="" />
           <a href="/pages/login.html">Login</a>
           <a href="pages/register.html" id="getStarted">Get started</a>
         </div>
+
+        <img
+          src="/images/menu-btn.png"
+          alt=""
+          width="40"
+          class="menu-hamburger"
+        />
       </nav>
     </header>
 
@@ -130,25 +147,49 @@
       </p>
 
       <div class="teamparent">
-        <div class="boxTeam">
-          <img src="./images/Team1.png" alt="" />
-          <h1>Emmalee Mclain</h1>
-          <p>Product Designer</p>
 
-          <div class="social">
-            <img src="/images/twitter.png" alt="twitter" />
-            <img src="./images/Github.png" alt="twitter" />
-          </div>
+              <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><div class="boxTeam">
+        <img src="./images/Team1.png" alt="" />
+        <h1>Emmalee Mclain</h1>
+        <p>Product Designer</p>
+
+        <div class="social">
+          <img src="/images/twitter.png" alt="twitter" />
+          <img src="./images/Github.png" alt="twitter" />
         </div>
-        <div class="boxTeam">
-          <img src="./images/Team2.png" alt="" />
-          <h1>Daisy Morgan</h1>
-          <p>Lead developer</p>
-          <div class="social">
-            <img src="./images/twitter.png" alt="twitter" />
-            <img src="./images/Github.png" alt="twitter" />
-          </div>
+      </div>
+      <div class="boxTeam">
+        <img src="./images/Team3.png" alt="" />
+        <h1>Ariyanna Hicks</h1>
+        <p>Experience Designer</p>
+        <div class="social">
+          <img src="./images/twitter.png" alt="twitter" />
+          <img src="./images/Dribble.png" alt="twitter" />
         </div>
+      </div>
+    </div>
+      <div class="swiper-slide">       <div class="boxTeam">
+        <img src="./images/Team2.png" alt="" />
+        <h1>Daisy Morgan</h1>
+        <p>Lead developer</p>
+        <div class="social">
+          <img src="./images/twitter.png" alt="twitter" />
+          <img src="./images/Github.png" alt="twitter" />
+        </div>
+      </div>
+      <div class="boxTeam">
+        <img src="./images/Team3.png" alt="" />
+        <h1>Ariyanna Hicks</h1>
+        <p>Experience Designer</p>
+        <div class="social">
+          <img src="./images/twitter.png" alt="twitter" />
+          <img src="./images/Dribble.png" alt="twitter" />
+        </div>
+      </div></div>
+      <div class="swiper-slide"> 
         <div class="boxTeam">
           <img src="./images/Team3.png" alt="" />
           <h1>Ariyanna Hicks</h1>
@@ -159,14 +200,38 @@
           </div>
         </div>
         <div class="boxTeam">
-          <img src="./images/Team4.png" alt="" />
-          <h1>Yamilet Hooker</h1>
-          <p>User interface designer</p>
+          <img src="./images/Team3.png" alt="" />
+          <h1>Ariyanna Hicks</h1>
+          <p>Experience Designer</p>
           <div class="social">
+            <img src="./images/twitter.png" alt="twitter" />
             <img src="./images/Dribble.png" alt="twitter" />
-            <img src="./images/Github.png" alt="twitter" />
           </div>
+        </div></div>
+      <div class="swiper-slide">   <div class="boxTeam">
+        <img src="./images/Team4.png" alt="" />
+        <h1>Yamilet Hooker</h1>
+        <p>User interface designer</p>
+        <div class="social">
+          <img src="./images/Dribble.png" alt="twitter" />
+          <img src="./images/Github.png" alt="twitter" />
         </div>
+      </div>
+      <div class="boxTeam">
+        <img src="./images/Team3.png" alt="" />
+        <h1>Ariyanna Hicks</h1>
+        <p>Experience Designer</p>
+        <div class="social">
+          <img src="./images/twitter.png" alt="twitter" />
+          <img src="./images/Dribble.png" alt="twitter" />
+        </div>
+      </div></div>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+        
+
+     
       </div>
     </section>
 
@@ -295,7 +360,6 @@
           <div class="verified">
             <img src="./images/virefied.png" alt="verified" />
             <span>Medical and vesion</span>
-            
           </div>
 
           <div class="verified">
@@ -379,7 +443,7 @@
           </div>
 
           <div>
-            <input type="checkbox" aria-label="Search"/>
+            <input type="checkbox" aria-label="Search" />
             <span>Dont provide any promotional message.</span>
           </div>
         </form>
@@ -433,5 +497,7 @@
         </ul>
       </div>
     </footer>
+
+    <script src="/js/script.js"></script>
   </body>
 </html>
