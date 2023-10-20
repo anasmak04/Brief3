@@ -21,3 +21,55 @@
     object-fit: cover;
   }
 
+
+  .serparent{
+    display: flex;
+    width: 90%;
+    margin-left: 5%;
+  }
+
+  .serbox{
+    width: 45%;
+
+  }
+
+  .serparent img{
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .x h1{
+    margin-bottom: 15px;
+  }
+
+  .x{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  @media (max-width:700px){
+    .serparent{
+      flex-direction: column;
+      margin-left: auto;
+      width: 100%;
+    }
+
+    .serbox{
+      width: 100%;
+    }
+
+
+
+  }
+
+  @media (max-width:837px){
+    
+    .box1{
+      display: none;
+    }
+  }

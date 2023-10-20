@@ -12,6 +12,10 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
   
+  .navbar-links{
+    display: flex;
+    align-items: center;
+  }
   nav {
     display: flex;
     justify-content: space-around;

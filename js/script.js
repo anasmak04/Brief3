@@ -16,25 +16,6 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-ScrollReveal().reveal(".headline");
-
-AOS.init();
-
-const scrollReveal = ScrollReveal({
-  origin: "top",
-  distance: "30px",
-  duration: 700,
-  reset: true,
-});
-
-scrollReveal.reveal(
-  `header , .logo , .logo img,
-    .app_boxes, .box,
-  #section_two, #section_three,
-   #section_one,.section_one_description,.appparent,.child-parent
-  `,
-  { interval: 100 }
-);
 
 
 
@@ -55,3 +36,6 @@ window.onclick = function(event) {
     }
   }
 }
+
+
+
