@@ -371,6 +371,11 @@ p {
 
 #services h1 {
   margin-bottom: 20px;
+  font-size: 20px;
+}
+
+#services p{
+  font-size: 18px;
 }
 
 .titre_blog {
@@ -388,6 +393,10 @@ p {
 
 .boximg1 {
   display: flex;
+}
+
+.boximg1 img{
+  width: 50px;
 }
 
 #HeroSection {
@@ -688,7 +697,6 @@ p {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: white;
   top: 70px;
   min-width: 160px;
   overflow: auto;
@@ -803,27 +811,79 @@ p {
   }
 }
 
-@media (max-width: 800px) {
-  .content {
-    text-align: center;
-  }
+
+.hamburger img {
+  width: 50px;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+}
+
+.flex-menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 80px;
+  width: 300px;
+  overflow: hidden;
+  height: 0; 
+  transition: height 0.3s ease; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.flex-menu li{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.flex-menu.open {
+  height: 300px;
 }
 
 @media (max-width: 770px) {
-  .nav2 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
   .buttons {
     display: none;
   }
 
-  .logo {
-    padding-top: 70px;
+  .hamburger {
+    display: block;
   }
+  
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .flex-menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  .content {
+    text-align: center;
+  }
+
+  .navbar-links{
+    display: none;
+  }
+}
+
+@media (max-width: 770px) {
+  /* .nav2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  } */
+
+  
 
   header {
     height: 150px;
@@ -1156,6 +1216,14 @@ p {
 .box-section img {
   margin: 0 auto;
   display: block;
+  max-width: 500px;
+}
+
+@media (max-width:486px){
+  .box-section img {
+    max-width: 300px;
+  }
+  
 }
 
 .formu input {
@@ -1235,8 +1303,26 @@ p {
     margin-bottom: 20px;
   }
 }
+
+@media (max-width:902px){
+  .parent-hero-section{
+    flex-direction: column;
+    height: auto;
+
+  }
+
+  #hero-section{
+    height: auto;
+  }
+
+  .boxi1{
+    height: auto;
+    text-align: center;
+  }
+}
 @media (max-width: 700px) {
   .parent-hero-section {
+    height: auto;
     flex-direction: column;
   }
 
