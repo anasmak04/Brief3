@@ -21,3 +21,25 @@ const flexMenu = document.querySelector(".flex-menu");
 hamburger.addEventListener("click", function () {
   flexMenu.classList.toggle("open");
 });
+
+
+
+const form = document.querySelector('.form');
+
+form.addEventListener('submit', (e) => {
+
+  e.preventDefault();
+  let password = document.getElementById('password').value;
+  let secondpwd = document.getElementById('secondPwd').value;
+
+
+  if(password !== secondpwd){
+    alert("passwords is not equals")
+  }
+
+  else{
+    alert("Form submitted successfully!");
+  }
+
+  
+})
