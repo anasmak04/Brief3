@@ -374,7 +374,7 @@ p {
   font-size: 20px;
 }
 
-#services p{
+#services p {
   font-size: 18px;
 }
 
@@ -395,7 +395,7 @@ p {
   display: flex;
 }
 
-.boximg1 img{
+.boximg1 img {
   width: 50px;
 }
 
@@ -811,7 +811,6 @@ p {
   }
 }
 
-
 .hamburger img {
   width: 50px;
   cursor: pointer;
@@ -828,13 +827,14 @@ p {
   top: 80px;
   width: 300px;
   overflow: hidden;
-  height: 0; 
-  transition: height 0.3s ease; 
+  height: 0;
+  transition: height 0.3s ease;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: none;
+  backdrop-filter: blur(10px);
 }
 
-.flex-menu li{
+.flex-menu li {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -851,7 +851,6 @@ p {
   .hamburger {
     display: block;
   }
-  
 
   nav {
     display: flex;
@@ -870,7 +869,7 @@ p {
     text-align: center;
   }
 
-  .navbar-links{
+  .navbar-links {
     display: none;
   }
 }
@@ -882,8 +881,6 @@ p {
     align-items: center;
     width: 100%;
   } */
-
-  
 
   header {
     height: 150px;
@@ -1219,11 +1216,10 @@ p {
   max-width: 500px;
 }
 
-@media (max-width:486px){
+@media (max-width: 486px) {
   .box-section img {
     max-width: 300px;
   }
-  
 }
 
 .formu input {
@@ -1304,18 +1300,17 @@ p {
   }
 }
 
-@media (max-width:902px){
-  .parent-hero-section{
+@media (max-width: 902px) {
+  .parent-hero-section {
     flex-direction: column;
     height: auto;
-
   }
 
-  #hero-section{
+  #hero-section {
     height: auto;
   }
 
-  .boxi1{
+  .boxi1 {
     height: auto;
     text-align: center;
   }
@@ -1348,6 +1343,14 @@ p {
     margin: 0 auto;
     display: block;
     margin-bottom: 10px;
+  }
+}
+
+
+@media (max-width:400px){
+  .imgb img{
+    max-width: 300px;
+    margin-bottom: 20px;
   }
 }
 
