@@ -315,8 +315,20 @@ p {
   display: block;
 }
 
+.buttons{
+
+}
+.buttons img{
+  width: 20px;
+}
+
 .partners img {
+  width: 150px;
   margin: 10px;
+}
+
+.hero_dark img{
+  width: 20px;
 }
 
 #superheros {
