@@ -71,19 +71,6 @@ function closeModal(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 function myFunction() {
   var dropdowns = document.querySelectorAll(".myDropdown");
   dropdowns.forEach(function(dropdown) {
