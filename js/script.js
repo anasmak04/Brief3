@@ -33,6 +33,33 @@ window.onclick = function(event) {
   }
 };
 
+let theme_toggler = document.querySelector('#theme_toggler');
+
+theme_toggler.addEventListener('click', function(){ 
+    document.body.classList.toggle('dark_mode');
+
+
+    let iconElement = theme_toggler.querySelector('i');
+    let lockIcon = document.getElementById('lockIcon');
+
+    if (document.body.classList.contains('dark_mode')) {
+
+        iconElement.classList.remove('fa-sun');
+        iconElement.classList.add('fa-star');
+
+
+    } else {
+
+        iconElement.classList.remove('fa-star');
+        iconElement.classList.add('fa-sun');
+        lockIcon.src = '/images/lock-black.svg';
+
+    }
+});
+
+
+
+
 
 const hamburger = document.querySelector(".hamburger");
 const flexMenu = document.querySelector(".flex-menu");
