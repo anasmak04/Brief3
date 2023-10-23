@@ -6,7 +6,7 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-/// modals
+ //modals
 // const buttons = [
 //   {
 //     id: "myBtn1",
@@ -52,21 +52,44 @@ var swiper = new Swiper(".mySwiper", {
 
 
 
+
+
+
+let learnMoreBtns = document.querySelectorAll('.learnMore');
+let modals = document.querySelectorAll('.simpleModal');
+let closeBtns = document.querySelectorAll('.closeBtn');
+
+learnMoreBtns.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    modals[index].style.display = 'block';
+  });
+});
+
+closeBtns.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    modals[index].style.display = 'none';
+  });
+});
+
   
 
-let modal = document.getElementById('simpleModal');
-let modalBtn = document.getElementById('modalBtn');
-let closeBtn = document.getElementsByClassName('closeBtn')[0];
-modalBtn.addEventListener('click', openModal);
-closeBtn.addEventListener('click', closeModal);
+// let modal = document.getElementById('simpleModal');
+// let modalBtn = document.getElementById('modalBtn');
+// let closeBtn = document.getElementsByClassName('closeBtn')[0];
+// modalBtn.addEventListener('click', openModal);
+// closeBtn.addEventListener('click', closeModal);
 
-function openModal(){
-  modal.style.display = 'block';
-}
+// function openModal(){
+//   modal.style.display = 'block';
+// }
 
-function closeModal(){
-  modal.style.display = 'none';
-}
+// function closeModal(){
+//   modal.style.display = 'none';
+// }
+
+
+
+
 
 
 

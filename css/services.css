@@ -5,6 +5,9 @@
     height: 100%;
   }
 
+#modal1,#modal2,#modal3,#modal4,#modal5,#modal6,#modal7,#modal8,#modal9{
+  display: none;
+}
 
   .modal-overlay{
     display: none;

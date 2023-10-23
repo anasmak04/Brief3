@@ -17,6 +17,24 @@ window.onclick = function(event) {
   }
 };
 
+
+const form = document.querySelector('.form');
+
+form.addEventListener('submit', (e) => {
+
+  e.preventDefault();
+  let password = document.getElementById('password').value;
+  let name = document.getElementById('name').value;
+
+  if(name == ""  || password ==""){
+    alert("please enter all the fields")
+  }
+  
+
+
+  
+})
+
   
   const hamburger = document.querySelector(".hamburger");
   const flexMenu = document.querySelector(".flex-menu");

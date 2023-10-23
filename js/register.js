@@ -27,6 +27,10 @@ hamburger.addEventListener("click", function () {
 
 
 
+
+
+
+
 const form = document.querySelector('.form');
 
 form.addEventListener('submit', (e) => {
@@ -34,7 +38,13 @@ form.addEventListener('submit', (e) => {
   e.preventDefault();
   let password = document.getElementById('password').value;
   let secondpwd = document.getElementById('secondPwd').value;
+  let name = document.getElementById('name').value;
+  let email = document.getElementById('email').value;
 
+  if(name == "" || email == ""  || email == ""){
+    alert("please enter all the fields")
+  }
+  
 
   if(password !== secondpwd){
     alert("passwords is not equals")
