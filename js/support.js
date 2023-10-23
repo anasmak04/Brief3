@@ -18,13 +18,22 @@ window.onclick = function(event) {
   }
 };
 
-
-const hamburger = document.querySelector(".hamburger");
-const flexMenu = document.querySelector(".flex-menu");
-
-hamburger.addEventListener('click', function() {
-  flexMenu.classList.toggle('open');
-
-});
-
-
+  
+  
+  const hamburger = document.querySelector(".hamburger");
+  const flexMenu = document.querySelector(".flex-menu");
+  
+  hamburger.addEventListener('click', function() {
+    flexMenu.classList.toggle('open');
+  
+  });
+  
+  const menuItems = document.querySelector('.flex-menu');
+  menuItems.forEach(function(item) {
+    item.addEventListener('click', function() {
+      flexMenu.classList.remove('open');
+    });
+  });
+  
+  
+  

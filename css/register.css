@@ -478,6 +478,9 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+form button{
+  margin-top: 12px;
+}
 .box-section button {
   width: 100px;
   height: 40px;
@@ -489,7 +492,10 @@
   text-transform: capitalize;
   cursor: pointer;
 }
-
+form a{
+  padding-left: 35px;
+  
+}
 .boxi1 {
   padding: 4%;
 }

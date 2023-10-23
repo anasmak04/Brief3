@@ -680,18 +680,17 @@ p {
   }
 } */
 
+.dropdown-content.show{ position: absolute; left: 50%; transform: translateX(-50%); top: 30px; border: none; box-shadow: none; text-align: center; background: rgb(246, 246, 246); }
 .dropbtn {
   border: none;
   cursor: pointer;
 }
 
-.dropbtn:hover,
-.dropbtn:focus {
-}
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: flex;
+
 }
 
 .dropdown-content {
