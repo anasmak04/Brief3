@@ -10,84 +10,130 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/e33ad97e44.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>Agency Innovations</title>
     <title>Agency Innovations support</title>
-    <link rel="stylesheet" type="text/css" href="../css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
   </head>
   <body>
    
     <header class="open">
-      
       <nav>
-
-    
         <div class="nav2">
           <div class="logo">
             <img src="/images/Logo.png" alt="Logo" />
-            <a href="/index.html">Innovations</a>
+            <a class="hero_dark" href="/index.html">Innovations</a>
           </div>
-          
 
           <ul class="navbar-links">
-            <li><a href="/pages/advertise.html">Advertise</a></li>
-            <li class="dropdown">
-               <a onclick="myFunction()" class="dropbtn">Contact <i class="fa-solid fa-caret-down"></i></a>
-               <div class="myDropdown dropdown-content">
-                  <a href="/pages/support.html">Support</a>
-               </div>
+            <li>
+              <a class="hero_dark" href="/pages/advertise.html">Advertise</a>
             </li>
-            <li><a href="/pages/about.html">About</a></li>
-            <li><a href="/pages/services.html">Services</a></li>
+            <li class="dropdown">
+              <a onclick="myFunction()" class="dropbtn hero_dark"
+                >Contact <i class="fa-solid fa-caret-down"></i
+              ></a>
+              <div class="myDropdown dropdown-content">
+                <a class="hero_dark" href="/pages/support.html">Support</a>
+              </div>
+            </li>
+            <li><a class="hero_dark" href="/pages/about.html">About</a></li>
+            <li>
+              <a class="hero_dark" href="/pages/services.html">Services</a>
+            </li>
           </ul>
         </div>
 
         <div class="buttons navbar-links">
-          <img src="/images/lock.svg" alt="" />
-          <a href="/pages/login.html">Login</a>
-          <a href="/pages/register.html" id="getStarted">Get started</a>
+          <img
+            src="/images/lock.svg"
+            alt="lock-icone"
+            id="lockIcon"
+            class="lock-icon"
+          />
+          <a class="hero_dark" href="/pages/login.html">Login</a>
+          <a class="hero_dark" href="/pages/register.html" id="getStarted"
+            >Get started</a
+          >
         </div>
 
         <div class="hamburger">
-          <img src="https://icon-library.com/images/mobile-menu-icon-png/mobile-menu-icon-png-28.jpg" alt="">
+          <img
+            src="https://icon-library.com/images/mobile-menu-icon-png/mobile-menu-icon-png-28.jpg"
+            alt=""
+          />
         </div>
-        
+
         <div class="flex-menu open">
           <ul>
-             <li><a href="/pages/advertise.html">Advertise</a></li>
-             <li class="dropdown">
-                <a onclick="myFunction()" class="dropbtn">Contact <i class="fa-solid fa-caret-down"></i></a>
-                <div class="myDropdown dropdown-content">
-                   <a href="support.html">Support</a>
-                </div>
-             </li>
-             <li><a href="/pages/about.html">About</a></li>
-             <li><a href="/pages/services.html">Services</a></li>
-             <li><a href="/pages/login.html">Login</a></li>
-             <li><a href="pages/register.html" id="getStarted">Get started</a></li>
+            <li>
+              <a class="hero_dark" href="/pages/advertise.html">Advertise</a>
+            </li>
+            <li class="dropdown">
+              <a class="hero_dark" onclick="myFunction()" class="dropbtn"
+                >Contact <i class="fa-solid fa-caret-down"></i
+              ></a>
+              <div class="myDropdown dropdown-content">
+                <a href="/pages/support.html">Support</a>
+              </div>
+            </li>
+            <li><a class="hero_dark" href="/pages/about.html">About</a></li>
+            <li>
+              <a class="hero_dark" href="/pages/services.html">Services</a>
+            </li>
+            <li><a class="hero_dark" href="/pages/login.html">Login</a></li>
+            <li>
+              <a class="hero_dark" href="/pages/register.html" id="getStarted"
+                >Get started</a
+              >
+            </li>
           </ul>
-       </div>
-        
+        </div>
+
+        <span id="theme_toggler">
+          <i class="fa-regular fa-sun"></i>
+        </span>
       </nav>
     </header>
 
 
-    <section class="support">
-      <h1>Contact Us</h1>
 
-      <p>
+    <section class="support">
+      <h1 class="hero_dark">Contact Us</h1>
+
+      <p  class="hero_dark">
         The support team is available 24/7 to assist you and answer any
         questions you may have in order to achieve greater success.
       </p>
 
       <form>
-        <label>Name</label> <br />
+        <label  class="hero_dark">Name</label> <br />
         <input type="text" placeholder="Enter Your Name : " /> <br />
-        <label>Email</label> <br />
+        <label  class="hero_dark">Email</label> <br />
         <input type="email" id="email" placeholder="Enter Your Email" /> <br />
         <span id="error"></span>
-        <label>How we can help you</label>
+        <label  class="hero_dark">How we can help you</label>
         <textarea placeholder="Enter Your Message"></textarea> <br />
         <button onclick="check()">send</button>
       </form>
+      
     </section>
 
     <footer>
@@ -95,45 +141,53 @@
         <ul class="first_List">
           <li>
             <div class="logo">
-              <img src="../images/Logo.png" alt="Logo" />
-              <h2>Innovations</h2>
+              <img src="./images/Logo.png" alt="Logo" />
+              <h2 class="hero_dark">Innovations</h2>
             </div>
           </li>
 
-          <li>Terms of use | Privacy</li>
-          <li>copyright by 2023</li>
+          <li class="hero_dark">Terms of use | Privacy</li>
+          <li class="hero_dark">copyright by 2023</li>
         </ul>
 
         <ul>
-          <li>About Us</li>
-          <li>Support Center</li>
-          <li>Customer Support</li>
-          <li>About Us</li>
-          <li>Copyright</li>
+          <li class="hero_dark">About Us</li>
+          <li class="hero_dark">Support Center</li>
+          <li class="hero_dark">Customer Support</li>
+          <li class="hero_dark">About Us</li>
+          <li class="hero_dark">Copyright</li>
         </ul>
 
         <ul>
-          <li>Our Information</li>
-          <li>Return Policy</li>
-          <li>Privacy Policy</li>
-          <li>Terms & conditions</li>
-          <li>Site Map</li>
+          <li class="hero_dark">Our Information</li>
+          <li class="hero_dark">Return Policy</li>
+          <li class="hero_dark">Privacy Policy</li>
+          <li class="hero_dark">Terms & conditions</li>
+          <li class="hero_dark">Site Map</li>
         </ul>
 
         <ul>
-          <li>My Account</li>
-          <li>Press inquiries</li>
-          <li>social media</li>
-          <li>directories</li>
-          <li>Images & B-roll</li>
+          <li class="hero_dark">My Account</li>
+          <li class="hero_dark">Press inquiries</li>
+          <li class="hero_dark">social media</li>
+          <li class="hero_dark">directories</li>
+          <li class="hero_dark">Images & B-roll</li>
         </ul>
 
         <ul>
-          <li>Connect</li>
-          <li><img src="../images/fb.png" alt="" /> Facebook</li>
-          <li><img src="../images/twitter.png" alt="" />Twitter</li>
-          <li><img src="../images/Github.png" alt="" />Github</li>
-          <li><img src="../images/Dribble.png" alt="" />Dribble</li>
+          <li class="hero_dark">Connect</li>
+          <li class="hero_dark">
+            <img src="/images/fb.png" alt="face" id="facebook" /> Facebook
+          </li>
+          <li class="hero_dark">
+            <img src="/images/twitter.png" alt="twit" id="twitter" />Twitter
+          </li>
+          <li class="hero_dark">
+            <img src="/images/Github.png" alt="gith" id="github" />Github
+          </li>
+          <li class="hero_dark">
+            <img src="/images/Dribble.png" alt="drib" id="dribble" />Dribble
+          </li>
         </ul>
       </div>
     </footer>

@@ -11,10 +11,19 @@
         <script src="https://kit.fontawesome.com/e33ad97e44.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@simondmc/popup-js@1.4.2/popup.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+        rel="stylesheet"
+      />
+      <script
+      src="https://kit.fontawesome.com/e33ad97e44.js"
+      crossorigin="anonymous"
+    ></script>
         <title>Agency Innovations</title>
         <link rel="stylesheet" type="text/css" href="/css/services.css" />
       </head>
 <body>
+
   <header class="open">
       
     <nav>
@@ -23,27 +32,27 @@
       <div class="nav2">
         <div class="logo">
           <img src="/images/Logo.png" alt="Logo" />
-          <a href="/index.html">Innovations</a>
+          <a class="hero_dark" href="/index.html">Innovations</a>
         </div>
         
 
         <ul class="navbar-links">
-          <li><a href="/pages/advertise.html">Advertise</a></li>
+          <li><a href="advertise.html" class="hero_dark">Advertise</a></li>
           <li class="dropdown">
-             <a onclick="myFunction()" class="dropbtn">Contact <i class="fa-solid fa-caret-down"></i></a>
+             <a onclick="myFunction()" class="dropbtn hero_dark">Contact <i class="fa-solid fa-caret-down"></i></a>
              <div class="myDropdown dropdown-content">
-                <a href="/pages/support.html">Support</a>
+                <a class="hero_dark" href="/pages/support.html">Support</a>
              </div>
           </li>
-          <li><a href="/pages/about.html">About</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li><a class="hero_dark" href="/pages/about.html">About</a></li>
+          <li><a class="hero_dark" href="/pages/services.html">Services</a></li>
         </ul>
       </div>
 
       <div class="buttons navbar-links">
-        <img src="/images/lock.svg" alt="" />
-        <a href="/pages/login.html">Login</a>
-        <a href="pages/register.html" id="getStarted">Get started</a>
+        <img src="/images/lock.svg" alt="" id="lockIcon"/>
+        <a class="hero_dark" href="/pages/login.html">Login</a>
+        <a class="hero_dark" href="/pages/register.html" id="getStarted">Get started</a>
       </div>
 
       <div class="hamburger">
@@ -52,20 +61,22 @@
       
       <div class="flex-menu open">
         <ul>
-           <li><a href="/pages/advertise.html">Advertise</a></li>
+           <li><a href="./pages/advertise.html">Advertise</a></li>
            <li class="dropdown">
               <a onclick="myFunction()" class="dropbtn">Contact <i class="fa-solid fa-caret-down"></i></a>
               <div class="myDropdown dropdown-content">
                  <a href="/pages/support.html">Support</a>
               </div>
            </li>
-           <li><a href="/pages/about.html">About</a></li>
-           <li><a href="services.html">Services</a></li>
-           <li><a href="/pages/login.html">Login</a></li>
-           <li><a href="/pages/register.html" id="getStarted">Get started</a></li>
+           <li><a href="/pages/about.html" class="hero_dark">About</a></li>
+           <li><a href="/pages/services.html" class="hero_dark">Services</a></li>
+           <li><a href="/pages/login.html" class="hero_dark">Login</a></li>
+           <li><a href="/pages/register.html" id="getStarted" class="hero_dark">Get started</a></li>
         </ul>
      </div>
-      
+     <span id="theme_toggler">
+      <i class="fa-regular fa-sun"></i>
+    </span>
     </nav>
   </header>
 
@@ -76,7 +87,7 @@
                   <img src="/images/Service 24_7-bro.png" alt="">
                 </div>
                 <div class="serbox x">
-                  <h1>our service</h1>
+                  <h1 cla>our service</h1>
                   <p>we understand the unique challenges agencies face in today's competitive market. Our mission is to empower agencies of all sizes and specialties to not just survive, but to thrive. With our comprehensive range of services tailored specifically for agencies, we pave the way for your business to reach new heights of success.</p>
                 </div>
           
@@ -364,53 +375,63 @@
         </div>
       </section>
 
-      <footer>
-        <div class="parent">
-          <ul class="first_List">
-            <li>
-              <div class="logo">
-                <img src="/images/Logo.png" alt="Logo" />
-                <h2>Innovations</h2>
-              </div>
-            </li>
-  
-            <li>Terms of use | Privacy</li>
-            <li>copyright by 2023</li>
-          </ul>
-  
-          <ul>
-            <li>About Us</li>
-            <li>Support Center</li>
-            <li>Customer Support</li>
-            <li>About Us</li>
-            <li>Copyright</li>
-          </ul>
-  
-          <ul>
-            <li>Our Information</li>
-            <li>Return Policy</li>
-            <li>Privacy Policy</li>
-            <li>Terms & conditions</li>
-            <li>Site Map</li>
-          </ul>
-  
-          <ul>
-            <li>My Account</li>
-            <li>Press inquiries</li>
-            <li>social media</li>
-            <li>directories</li>
-            <li>Images & B-roll</li>
-          </ul>
-  
-          <ul>
-            <li>Connect</li>
-            <li><img src="/images/fb.png" alt="face" /> Facebook</li>
-            <li><img src="/images/twitter.png" alt="twit" />Twitter</li>
-            <li><img src="/images/Github.png" alt="gith" />Github</li>
-            <li><img src="/images/Dribble.png" alt="drib" />Dribble</li>
-          </ul>
-        </div>
-      </footer>
+         
+    <footer>
+      <div class="parent">
+        <ul class="first_List">
+          <li>
+            <div class="logo">
+              <img src="/images/Logo.png" alt="Logo" />
+              <h2 class="hero_dark">Innovations</h2>
+            </div>
+          </li>
+
+          <li class="hero_dark">Terms of use | Privacy</li>
+          <li class="hero_dark">copyright by 2023</li>
+        </ul>
+
+        <ul>
+          <li class="hero_dark">About Us</li>
+          <li class="hero_dark">Support Center</li>
+          <li class="hero_dark">Customer Support</li>
+          <li class="hero_dark">About Us</li>
+          <li class="hero_dark">Copyright</li>
+        </ul>
+
+        <ul>
+          <li class="hero_dark">Our Information</li>
+          <li class="hero_dark">Return Policy</li>
+          <li class="hero_dark">Privacy Policy</li>
+          <li class="hero_dark">Terms & conditions</li>
+          <li class="hero_dark">Site Map</li>
+        </ul>
+
+        <ul>
+          <li class="hero_dark">My Account</li>
+          <li class="hero_dark">Press inquiries</li>
+          <li class="hero_dark">social media</li>
+          <li class="hero_dark">directories</li>
+          <li class="hero_dark">Images & B-roll</li>
+        </ul>
+
+        <ul>
+          <li class="hero_dark">Connect</li>
+          <li class="hero_dark">
+            <img src="/images/fb.png" alt="face" id="facebook" /> Facebook
+          </li>
+          <li class="hero_dark">
+            <img src="/images/twitter.png" alt="twit" id="twitter" />Twitter
+          </li>
+          <li class="hero_dark">
+            <img src="/images/Github.png" alt="gith" id="github" />Github
+          </li>
+          <li class="hero_dark">
+            <img src="/images/Dribble.png" alt="drib" id="dribble" />Dribble
+          </li>
+        </ul>
+      </div>
+    </footer>
+
 
 
       <script src="/js/services.js"></script>
