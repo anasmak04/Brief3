@@ -14,78 +14,93 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
-      <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-      <script
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    <script
       src="https://kit.fontawesome.com/e33ad97e44.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
 
     <title>Agency Innovations</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
   <body>
-    <header class="open">
-      
-      <nav>
-
     
+    <header class="open">
+      <nav>
         <div class="nav2">
           <div class="logo">
             <img src="./images/Logo.png" alt="Logo" />
-            <a href="/index.html">Innovations</a>
+            <a class="hero_dark"  href="/index.html">Innovations</a>
           </div>
-          
 
           <ul class="navbar-links">
-            <li><a href="./pages/advertise.html">Advertise</a></li>
+            <li><a class="hero_dark"  href="./pages/advertise.html">Advertise</a></li>
             <li class="dropdown">
-               <a onclick="myFunction()" class="dropbtn">Contact <i class="fa-solid fa-caret-down"></i></a>
-               <div class="myDropdown dropdown-content">
-                  <a href="./pages/support.html">Support</a>
-               </div>
+              <a class="hero_dark"  onclick="myFunction()" class="dropbtn"
+                >Contact <i class="fa-solid fa-caret-down"></i
+              ></a>
+              <div class="myDropdown dropdown-content">
+                <a  class="hero_dark"  href="./pages/support.html">Support</a>
+              </div>
             </li>
-            <li><a href="./pages/about.html">About</a></li>
-            <li><a href="/pages/services.html">Services</a></li>
+            <li><a class="hero_dark"  href="./pages/about.html">About</a></li>
+            <li><a class="hero_dark"  href="/pages/services.html">Services</a></li>
           </ul>
         </div>
 
         <div class="buttons navbar-links">
-          <img src="/images/lock.svg" alt="" />
-          <a href="/pages/login.html">Login</a>
-          <a href="pages/register.html" id="getStarted">Get started</a>
+          <img src="/images/lock.svg" alt="lock-icone" id="lockIcon" class="lock-icon"/>
+          <a class="hero_dark" href="/pages/login.html">Login</a>
+          <a class="hero_dark" href="pages/register.html" id="getStarted">Get started</a>
         </div>
 
         <div class="hamburger">
-          <img src="https://icon-library.com/images/mobile-menu-icon-png/mobile-menu-icon-png-28.jpg" alt="">
+          <img
+            src="https://icon-library.com/images/mobile-menu-icon-png/mobile-menu-icon-png-28.jpg"
+            alt=""
+          />
         </div>
-        
+
         <div class="flex-menu open">
           <ul>
-             <li><a href="./pages/advertise.html">Advertise</a></li>
-             <li class="dropdown">
-                <a onclick="myFunction()" class="dropbtn">Contact <i class="fa-solid fa-caret-down"></i></a>
-                <div class="myDropdown dropdown-content">
-                   <a href="./pages/support.html">Support</a>
-                </div>
-             </li>
-             <li><a href="./pages/about.html">About</a></li>
-             <li><a href="/pages/services.html">Services</a></li>
-             <li><a href="/pages/login.html">Login</a></li>
-             <li><a href="pages/register.html" id="getStarted">Get started</a></li>
+            <li><a class="hero_dark"  href="./pages/advertise.html">Advertise</a></li>
+            <li class="dropdown">
+              <a class="hero_dark"  onclick="myFunction()" class="dropbtn"
+                >Contact <i class="fa-solid fa-caret-down"></i
+              ></a>
+              <div class="myDropdown dropdown-content">
+                <a href="./pages/support.html">Support</a>
+              </div>
+            </li>
+            <li><a class="hero_dark"  href="./pages/about.html">About</a></li>
+            <li><a class="hero_dark"  href="/pages/services.html">Services</a></li>
+            <li><a  class="hero_dark" href="/pages/login.html">Login</a></li>
+            <li>
+              <a class="hero_dark"  href="pages/register.html" id="getStarted">Get started</a>
+            </li>
           </ul>
-       </div>
-        
+        </div>
+
+        <span id="theme_toggler">
+          <i class="fa-regular fa-sun"></i>
+        </span>
       </nav>
     </header>
 
     <section id="HeroSection">
-      <h1 class="hero__title ">
+      <h1 class="hero__title hero_dark">
         creativity start with viewing the <br />
         whole world differntly
       </h1>
-      <p class="content__hero ">a service agency with customer satisfaction</p>
+      <p class="content__hero hero_dark">a service agency with customer satisfaction</p>
       <button>Get started</button>
 
       <img src="./images/illustration.png" alt="" />
@@ -155,8 +170,8 @@
       </div>
       <hr class="line" />
       <div class="partners">
-        <img src="./images/uber.png" alt="uber" />
-        <img src="./images/google.png" alt="google" />
+        <img src="./images/uber.png" alt="uber" id="uber"/>
+        <img src="./images/google.png" alt="google"  />
         <img src="./images/paypal.png" alt="paypal" />
         <img src="./images/microsoft.png" alt="microsoft" />
         <img src="./images/image 15.png" alt="dribble" />
@@ -176,22 +191,22 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <div class="boxTeam">
-                <img src="./images/Team1.png" alt="" />
+                <img src="./images/Team2.png" alt="" />
                 <h1>Emmalee Mclain</h1>
                 <p>Product Designer</p>
 
                 <div class="social">
-                  <img src="/images/twitter.png" alt="twitter" />
-                  <img src="./images/Github.png" alt="twitter" />
+                  <img src="/images/twitter.png" alt="twitter" id="twitter"/>
+                  <img src="./images/Github.png" alt="dribble" id="dribble"/>
                 </div>
               </div>
-              <div class="boxTeamv tem">
+              <div class="boxTeam tem">
                 <img src="./images/Team3.png" alt="" />
                 <h1>Ariyanna Hicks</h1>
                 <p>Experience Designer</p>
                 <div class="social">
-                  <img src="./images/twitter.png" alt="twitter" />
-                  <img src="./images/Dribble.png" alt="twitter" />
+                  <img src="./images/twitter.png" alt="twitter" id="twitter"/>
+                  <img src="./images/Dribble.png" alt="dribble" id="dribble"/>
                 </div>
               </div>
             </div>
@@ -201,8 +216,8 @@
                 <h1>Daisy Morgan</h1>
                 <p>Lead developer</p>
                 <div class="social">
-                  <img src="./images/twitter.png" alt="twitter" />
-                  <img src="./images/Github.png" alt="twitter" />
+                  <img src="./images/twitter.png" alt="twitter" id="twitter"/>
+                  <img src="./images/Github.png" alt="twitter" id="dribble"/>
                 </div>
               </div>
               <div class="boxTeam tem">
@@ -210,8 +225,8 @@
                 <h1>Ariyanna Hicks</h1>
                 <p>Experience Designer</p>
                 <div class="social">
-                  <img src="./images/twitter.png" alt="twitter" />
-                  <img src="./images/Dribble.png" alt="twitter" />
+                  <img src="./images/twitter.png" alt="twitter" id="twitter"/>
+                  <img src="./images/Dribble.png" alt="twitter" id="dribble"/>
                 </div>
               </div>
             </div>
@@ -221,8 +236,8 @@
                 <h1>Ariyanna Hicks</h1>
                 <p>Experience Designer</p>
                 <div class="social">
-                  <img src="./images/twitter.png" alt="twitter" />
-                  <img src="./images/Dribble.png" alt="twitter" />
+                  <img src="./images/twitter.png" alt="twitter" id="twitter"/>
+                  <img src="./images/Dribble.png" alt="dribble" id="dribble"/>
                 </div>
               </div>
               <div class="boxTeam tem">
@@ -230,8 +245,8 @@
                 <h1>Ariyanna Hicks</h1>
                 <p>Experience Designer</p>
                 <div class="social">
-                  <img src="./images/twitter.png" alt="twitter" />
-                  <img src="./images/Dribble.png" alt="twitter" />
+                  <img src="./images/twitter.png" alt="twitter" id="twitter"/>
+                  <img src="./images/Dribble.png" alt="twitter" id="dribble"/>
                 </div>
               </div>
             </div>
@@ -241,8 +256,8 @@
                 <h1>Yamilet Hooker</h1>
                 <p>User interface designer</p>
                 <div class="social">
-                  <img src="./images/Dribble.png" alt="twitter" />
-                  <img src="./images/Github.png" alt="twitter" />
+                  <img src="./images/Dribble.png" alt="twitter" id="twitter"/>
+                  <img src="./images/Github.png" alt="twitter" id="dribble"/>
                 </div>
               </div>
               <div class="boxTeam tem">
@@ -250,8 +265,8 @@
                 <h1>Ariyanna Hicks</h1>
                 <p>Experience Designer</p>
                 <div class="social">
-                  <img src="./images/twitter.png" alt="twitter" />
-                  <img src="./images/Dribble.png" alt="twitter" />
+                  <img src="./images/twitter.png" alt="twitter" id="twitter"/>
+                  <img src="./images/Dribble.png" alt="dribble" id="dribble"/>
                 </div>
               </div>
             </div>
@@ -260,8 +275,6 @@
         </div>
       </div>
     </section>
-
-
 
     <section id="work">
       <div class="buisiness">
@@ -303,8 +316,8 @@
     </section>
 
     <section id="blog">
-      <h1 class="titre_blog">Popular blog post we update everyday</h1>
-      <p class="content__blog">
+      <h1 class="titre_blog hero_dark">Popular blog post we update everyday</h1>
+      <p class="content__blog hero_dark">
         Focus only on the meaning, we take care of the design. As soon as the
         <br />
         meeting end you can export in one click.
@@ -313,10 +326,10 @@
       <div class="parentblog">
         <div class="boxblog1">
           <img src="/images/blog1.png" alt="" />
-          <h1>
+          <h1 class="hero_dark">
             How to work with prototype design with adobe xd featuring tools
           </h1>
-          <p>
+          <p class="hero_dark">
             The 2019 Innovation by Design Awards honor the designers and
             businesses solving the problems of today and tomorrow. It is one of
             the most sought-after design
@@ -325,7 +338,7 @@
 
         <div class="boxblog2">
           <div class="blogcontent">
-            <h1>
+            <h1 class="hero_dark">
               Antibias receives honorable gift mention at Fast Company’s most
               Innovation by Design Awards
             </h1>
@@ -333,8 +346,8 @@
 
           <div class="blogbox">
             <img src="/images/blog2.png" alt="" />
-            <h1>Multiple arbard prototype with Figma</h1>
-            <p>
+            <h1 class="hero_dark">Multiple arbard prototype with Figma</h1>
+            <p class="hero_dark">
               Beyond launched antibias, a Chrome extension that replaces
               LinkedIn profile photos
             </p>
@@ -356,8 +369,8 @@
     <section id="subscribe">
       <div class="subscribe2">
         <div class="contentsubscribe">
-          <h1>Like our service? Subscribe us</h1>
-          <p>
+          <h1 class="hero_dark">Like our service? Subscribe us</h1>
+          <p class="hero_dark">
             We have more than thousand of creative entrepreneurs and stat
             joining our business
           </p>
@@ -383,44 +396,44 @@
           <li>
             <div class="logo">
               <img src="./images/Logo.png" alt="Logo" />
-              <h2>Innovations</h2>
+              <h2 class="hero_dark">Innovations</h2>
             </div>
           </li>
 
-          <li>Terms of use | Privacy</li>
-          <li>copyright by 2023</li>
+          <li class="hero_dark">Terms of use | Privacy</li>
+          <li class="hero_dark">copyright by 2023</li>
         </ul>
 
         <ul>
-          <li>About Us</li>
-          <li>Support Center</li>
-          <li>Customer Support</li>
-          <li>About Us</li>
-          <li>Copyright</li>
+          <li class="hero_dark">About Us</li>
+          <li  class="hero_dark" >Support Center</li>
+          <li class="hero_dark" >Customer Support</li>
+          <li class="hero_dark" >About Us</li>
+          <li class="hero_dark" >Copyright</li>
         </ul>
 
         <ul>
-          <li>Our Information</li>
-          <li>Return Policy</li>
-          <li>Privacy Policy</li>
-          <li>Terms & conditions</li>
-          <li>Site Map</li>
+          <li class="hero_dark">Our Information</li>
+          <li class="hero_dark" >Return Policy</li>
+          <li class="hero_dark" >Privacy Policy</li>
+          <li class="hero_dark" >Terms & conditions</li>
+          <li class="hero_dark" >Site Map</li>
         </ul>
 
         <ul>
-          <li>My Account</li>
-          <li>Press inquiries</li>
-          <li>social media</li>
-          <li>directories</li>
-          <li>Images & B-roll</li>
+          <li class="hero_dark">My Account</li>
+          <li class="hero_dark">Press inquiries</li>
+          <li class="hero_dark">social media</li>
+          <li class="hero_dark">directories</li>
+          <li class="hero_dark">Images & B-roll</li>
         </ul>
 
         <ul>
-          <li>Connect</li>
-          <li><img src="./images/fb.png" alt="face" /> Facebook</li>
-          <li><img src="./images/twitter.png" alt="twit" />Twitter</li>
-          <li><img src="./images/Github.png" alt="gith" />Github</li>
-          <li><img src="./images/Dribble.png" alt="drib" />Dribble</li>
+          <li class="hero_dark">Connect</li>
+          <li class="hero_dark"><img src="./images/fb.png" alt="face" id="facebook"/> Facebook</li>
+          <li class="hero_dark"><img src="./images/twitter.png" alt="twit" id="twitter" />Twitter</li>
+          <li class="hero_dark"><img src="./images/Github.png" alt="gith" id="github"/>Github</li>
+          <li class="hero_dark"><img src="./images/Dribble.png" alt="drib" id="dribble"/>Dribble</li>
         </ul>
       </div>
     </footer>
