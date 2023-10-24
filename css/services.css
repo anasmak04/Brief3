@@ -1,5 +1,13 @@
 @import url('/css/styles.css');
 
+
+.dark_mode #services{
+  background-color: #001c30;
+}
+
+.dark_mode .swiper-slide{
+  background-color: #001c30;
+}
 .swiper {
     width: 100%;
     height: 100%;

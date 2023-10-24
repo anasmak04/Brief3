@@ -10,7 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
-
     <script
     src="https://kit.fontawesome.com/e33ad97e44.js"
     crossorigin="anonymous"
@@ -27,27 +26,27 @@
         <div class="nav2">
           <div class="logo">
             <img src="/images/Logo.png" alt="Logo" />
-            <a href="/index.html">Innovations</a>
+            <a class="hero_dark" href="/index.html">Innovations</a>
           </div>
           
 
           <ul class="navbar-links">
-            <li><a href="/pages/advertise.html">Advertise</a></li>
+            <li><a href="advertise.html" class="hero_dark">Advertise</a></li>
             <li class="dropdown">
-               <a onclick="myFunction()" class="dropbtn">Contact <i class="fa-solid fa-caret-down"></i></a>
+               <a onclick="myFunction()" class="dropbtn hero_dark">Contact <i class="fa-solid fa-caret-down"></i></a>
                <div class="myDropdown dropdown-content">
-                  <a href="/pages/support.html">Support</a>
+                  <a class="hero_dark" href="/pages/support.html">Support</a>
                </div>
             </li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="/pages/services.html">Services</a></li>
+            <li><a class="hero_dark" href="/pages/about.html">About</a></li>
+            <li><a class="hero_dark" href="/pages/services.html">Services</a></li>
           </ul>
         </div>
 
         <div class="buttons navbar-links">
-          <img src="/images/lock.svg" alt="" />
-          <a href="/pages/login.html">Login</a>
-          <a href="pages/register.html" id="getStarted">Get started</a>
+          <img src="/images/lock.svg" alt="" id="lockIcon"/>
+          <a class="hero_dark" href="/pages/login.html">Login</a>
+          <a class="hero_dark" href="/pages/register.html" id="getStarted">Get started</a>
         </div>
 
         <div class="hamburger">
@@ -56,20 +55,22 @@
         
         <div class="flex-menu open">
           <ul>
-             <li><a href="/pages/advertise.html">Advertise</a></li>
+             <li><a href="./pages/advertise.html">Advertise</a></li>
              <li class="dropdown">
                 <a onclick="myFunction()" class="dropbtn">Contact <i class="fa-solid fa-caret-down"></i></a>
                 <div class="myDropdown dropdown-content">
                    <a href="/pages/support.html">Support</a>
                 </div>
              </li>
-             <li><a href="/pages/about.html">About</a></li>
-             <li><a href="/pages/services.html">Services</a></li>
-             <li><a href="/pages/login.html">Login</a></li>
-             <li><a href="/pages/register.html" id="getStarted">Get started</a></li>
+             <li><a href="/pages/about.html" class="hero_dark">About</a></li>
+             <li><a href="/pages/services.html" class="hero_dark">Services</a></li>
+             <li><a href="/pages/login.html" class="hero_dark">Login</a></li>
+             <li><a href="/pages/register.html" id="getStarted" class="hero_dark">Get started</a></li>
           </ul>
        </div>
-        
+       <span id="theme_toggler">
+        <i class="fa-regular fa-sun"></i>
+      </span>
       </nav>
     </header>
 
@@ -79,13 +80,13 @@
           <img src="/images/About us page-rafiki.png" alt="" />
         </div>
         <div class="box-section boxi1">
-          <h1>
+          <h1 class="hero_dark">
             We help you to boost your <br />
             business profitable with
             <br />
             our talent marketer
           </h1>
-          <p>
+          <p class="hero_dark">
             Get your tests delivered at let home collect sample from <br />
             the victory of the managements that supplies best design <br />
             system guidelines ever.
@@ -101,12 +102,12 @@
     </section>
 
     <section id="meet">
-      <h1>
+      <h1 class="hero_dark">
         More than thousand of user we have <br />
         worldwide with happy feedback
       </h1>
 
-      <p>
+      <p class="hero_dark">
         Focus only on the meaning, we take care of the design. As soon as the
         meeting <br />
         end you can export in one click into your preferred.
@@ -115,14 +116,14 @@
       <img src="/images/meet.png" alt="" />
     </section>
 
-    <section id="testmonials">
+    <section id="testmonials" class="dark_mode">
       <h1>What Cients Says About Us</h1>
       <p>Customer testimonial</p>
 
       <div class="testmonials-parent">
         <div class="first-col">
           <div class="testmonial">
-            <p>
+            <p >
               Many thanks for you kind and efficient service. I have already and
               will definitely continue to recommend your services to others in
               the future.
@@ -131,8 +132,8 @@
             <div class="user">
               <img src="/images/tesmonial1.png" alt="" />
               <div class="author">
-                <h4>Merryn Manley</h4>
-                <h5>@merryn.manley</h5>
+                <h4 >Merryn Manley</h4>
+                <h5 >@merryn.manley</h5>
               </div>
             </div>
           </div>
@@ -149,8 +150,8 @@
             <div class="user">
               <img src="/images/testmonial2.png" alt="" />
               <div class="author">
-                <h4>Merryn Manley</h4>
-                <h5>@merryn.manley</h5>
+                <h4 >Merryn Manley</h4>
+                <h5 >@merryn.manley</h5>
               </div>
             </div>
           </div>
@@ -170,13 +171,13 @@
               <img src="/images/testmonial3.png" alt="" />
               <div class="author">
                 <h4>Merryn Manley</h4>
-                <h5>@merryn.manley</h5>
+                <h5 >@merryn.manley</h5>
               </div>
             </div>
           </div>
 
           <div class="testmonial">
-            <p>
+            <p >
               I would like to take this opportunity to thank SA Places for the
               great service rendered to us and in particular Estelle. You got me
               the best place ever in just a few moments after I spoke to you.
@@ -196,11 +197,11 @@
 
     <section id="faq">
       <h2>Frequently Asked Question</h2>
-      <button class="accordion">
+      <button class="accordion hero_dark">
         What services does your startup provide to other startups?
       </button>
-      <div class="panel">
-        <p>
+      <div class="panel hero_dark">
+        <p class="hero_dark">
           Our startup provides a comprehensive range of services tailored
           specifically for other startups. We offer strategic consulting to help
           startups define their business goals and create actionable plans.
@@ -209,11 +210,11 @@
         </p>
       </div>
 
-      <button class="accordion">
+      <button class="accordion hero_dark">
         How can our startup benefit from your services?
       </button>
-      <div class="panel">
-        <p>
+      <div class="panel hero_dark">
+        <p class="hero_dark">
           Your startup can benefit from our services in several ways. Firstly,
           we offer personalized guidance and mentorship from experts who have a
           proven track record in the industry. This mentorship can significantly
@@ -228,12 +229,12 @@
         </p>
       </div>
 
-      <button class="accordion">
+      <button class="accordion hero_dark">
         Is your assistance tailored for specific industries or types of
         startups?
       </button>
-      <div class="panel">
-        <p>
+      <div class="panel hero_dark">
+        <p class="hero_dark">
           No, our assistance is not limited to specific industries or types of
           startups. We understand that startups come from diverse sectors, each
           with its unique challenges and opportunities. Our team consists of
@@ -243,14 +244,36 @@
           our services are designed to be adaptable and applicable. We believe
           in the potential
         </p>
+
+        
+      </div>
+
+
+      <button class="accordion hero_dark">
+        Is your assistance tailored for specific industries or types of
+        startups?
+      </button>
+      <div class="panel hero_dark">
+        <p class="hero_dark">
+          No, our assistance is not limited to specific industries or types of
+          startups. We understand that startups come from diverse sectors, each
+          with its unique challenges and opportunities. Our team consists of
+          professionals with expertise in various fields, enabling us to provide
+          tailored support regardless of the industry or niche. Whether your
+          startup is in technology, healthcare, finance, or any other sector,
+          our services are designed to be adaptable and applicable. We believe
+          in the potential
+        </p>
+
+        
       </div>
     </section>
 
     <section id="subscribe">
       <div class="subscribe2">
         <div class="contentsubscribe">
-          <h1>Like our service? Subscribe us</h1>
-          <p>
+          <h1 class="hero_dark">Like our service? Subscribe us</h1>
+          <p class="hero_dark">
             We have more than thousand of creative entrepreneurs and stat
             joining our business
           </p>
@@ -259,60 +282,69 @@
         <div class="formsubscribe">
           <div>
             <input type="text" placeholder="Enter Email Address" />
-            <button>subscribe</button>
+            <button class="hero_dark">subscribe</button>
           </div>
           <div>
             <input type="checkbox" aria-label="Search" />
-            <span>Dont provide any promotional message.</span>
+            <span class="hero_dark">Dont provide any promotional message.</span>
           </div>
         </div>
       </div>
     </section>
 
+     
     <footer>
       <div class="parent">
         <ul class="first_List">
           <li>
             <div class="logo">
-              <img src="../images/Logo.png" alt="Logo" />
-              <h2>Innovations</h2>
+              <img src="/images/Logo.png" alt="Logo" />
+              <h2 class="hero_dark">Innovations</h2>
             </div>
           </li>
 
-          <li>Terms of use | Privacy</li>
-          <li>copyright by 2023</li>
+          <li class="hero_dark">Terms of use | Privacy</li>
+          <li class="hero_dark">copyright by 2023</li>
         </ul>
 
         <ul>
-          <li>About Us</li>
-          <li>Support Center</li>
-          <li>Customer Support</li>
-          <li>About Us</li>
-          <li>Copyright</li>
+          <li class="hero_dark">About Us</li>
+          <li class="hero_dark">Support Center</li>
+          <li class="hero_dark">Customer Support</li>
+          <li class="hero_dark">About Us</li>
+          <li class="hero_dark">Copyright</li>
         </ul>
 
         <ul>
-          <li>Our Information</li>
-          <li>Return Policy</li>
-          <li>Privacy Policy</li>
-          <li>Terms & conditions</li>
-          <li>Site Map</li>
+          <li class="hero_dark">Our Information</li>
+          <li class="hero_dark">Return Policy</li>
+          <li class="hero_dark">Privacy Policy</li>
+          <li class="hero_dark">Terms & conditions</li>
+          <li class="hero_dark">Site Map</li>
         </ul>
 
         <ul>
-          <li>My Account</li>
-          <li>Press inquiries</li>
-          <li>social media</li>
-          <li>directories</li>
-          <li>Images & B-roll</li>
+          <li class="hero_dark">My Account</li>
+          <li class="hero_dark">Press inquiries</li>
+          <li class="hero_dark">social media</li>
+          <li class="hero_dark">directories</li>
+          <li class="hero_dark">Images & B-roll</li>
         </ul>
 
         <ul>
-          <li>Connect</li>
-          <li><img src="../images/fb.png" alt="" /> Facebook</li>
-          <li><img src="../images/twitter.png" alt="" />Twitter</li>
-          <li><img src="../images/Github.png" alt="" />Github</li>
-          <li><img src="../images/Dribble.png" alt="" />Dribble</li>
+          <li class="hero_dark">Connect</li>
+          <li class="hero_dark">
+            <img src="/images/fb.png" alt="face" id="facebook" /> Facebook
+          </li>
+          <li class="hero_dark">
+            <img src="/images/twitter.png" alt="twit" id="twitter" />Twitter
+          </li>
+          <li class="hero_dark">
+            <img src="/images/Github.png" alt="gith" id="github" />Github
+          </li>
+          <li class="hero_dark">
+            <img src="/images/Dribble.png" alt="drib" id="dribble" />Dribble
+          </li>
         </ul>
       </div>
     </footer>
