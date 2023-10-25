@@ -32,7 +32,6 @@ let theme_toggler = document.querySelector("#theme_toggler");
 
 theme_toggler.addEventListener("click", function () {
   document.body.classList.toggle("dark_mode");
-
   let iconElement = theme_toggler.querySelector("i");
   let lockIcon = document.querySelectorAll("#lockIcon");
   let uber = document.querySelectorAll("#uber");
@@ -42,39 +41,30 @@ theme_toggler.addEventListener("click", function () {
   let dribble1 = document.querySelectorAll("#dribble1");
   let github = document.querySelectorAll("#github");
   let verified = document.querySelectorAll("#verified");
-
   if (document.body.classList.contains("dark_mode")) {
     iconElement.classList.remove("fa-sun");
     iconElement.classList.add("fa-star");
-
     lockIcon.forEach((item) => {
       item.src = "/images/padlock.png";
     });
-
     uber.forEach((item) => {
       item.src = "/images/uber1.png";
     });
-
     fb.forEach((item) => {
       item.src = "/images/facebook-app-white.png";
     });
-
     twitter.forEach((item) => {
       item.src = "/images/twitter-white.png";
     });
-
     dribble.forEach((item) => {
       item.src = "/images/dribble-white.png";
     });
-
     dribble1.forEach((item) => {
       item.src = "/images/dribble-v.png";
     });
-
     github.forEach((item) => {
       item.src = "/images/github-white.png";
     });
-
     verified.forEach((item) => {
       item.src = "/images/check-white.png";
     });
@@ -84,44 +74,38 @@ theme_toggler.addEventListener("click", function () {
     lockIcon.forEach((item) => {
       item.src = "/images/lock.svg";
     });
-
     uber.forEach((item) => {
       item.src = "/images/uber.png";
     });
-
     fb.forEach((item) => {
       item.src = "/images/Facebook.png";
     });
     twitter.forEach((item) => {
       item.src = "/images/twitter.png";
     });
-
     dribble.forEach((item) => {
       item.src = "/images/Dribble.png";
     });
     github.forEach((item) => {
       item.src = "/images/Github.png";
     });
-
     verified.forEach((item) => {
       item.src = "/images/virefied.png";
     });
-
     dribble1.forEach((item) => {
       item.src = "/images/image 15.png";
     });
   }
 });
 
+/// menu hamburger
 const hamburger = document.querySelector(".hamburger");
 const flexMenu = document.querySelector(".flex-menu");
-
-hamburger.addEventListener("click", function () {
+hamburger.addEventListener("click", () => {
   flexMenu.classList.toggle("open");
 });
-
 const menuItems = document.querySelector(".flex-menu");
-menuItems.forEach(function (item) {
+menuItems.forEach((item) => {
   item.addEventListener("click", function () {
     flexMenu.classList.remove("open");
   });

@@ -1,12 +1,10 @@
-
+/// dropdown
 function myFunction() {
   var dropdowns = document.querySelectorAll(".myDropdown");
   dropdowns.forEach(function(dropdown) {
     dropdown.classList.toggle("show");
   });
 }
-
-
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
     var dropdowns = document.querySelectorAll(".myDropdown");
@@ -18,13 +16,11 @@ window.onclick = function(event) {
   }
 };
 
-
+/// menu hamburger
 const hamburger = document.querySelector(".hamburger");
 const flexMenu = document.querySelector(".flex-menu");
-
 hamburger.addEventListener('click', function() {
   flexMenu.classList.toggle('open');
-
 });
 
 
