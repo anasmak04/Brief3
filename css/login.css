@@ -360,6 +360,11 @@
     gap: 8px;
   }
   
+  #error{
+    color: red;
+    display: none;
+  }
+  
   .verified img {
     width: 5%;
   }
@@ -412,6 +417,7 @@
     gap: 20px;
   }
   
+ 
   .formsubscribe button {
     background: #db4a87;
     color: white;

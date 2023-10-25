@@ -33,7 +33,6 @@
     <link rel="stylesheet" type="text/css" href="/css/styles.css" />
   </head>
   <body>
-   
     <header class="open">
       <nav>
         <div class="nav2">
@@ -113,27 +112,27 @@
       </nav>
     </header>
 
-
-
     <section class="support">
       <h1 class="hero_dark">Contact Us</h1>
 
-      <p  class="hero_dark">
+      <p class="hero_dark">
         The support team is available 24/7 to assist you and answer any
         questions you may have in order to achieve greater success.
       </p>
 
-      <form>
-        <label  class="hero_dark">Name</label> <br />
+      <form class="form">
+        <label class="hero_dark">Name</label> <br />
         <input type="text" placeholder="Enter Your Name : " /> <br />
-        <label  class="hero_dark">Email</label> <br />
+        <span class="forget hero_dark" id="error">name is not valid</span>
+        <br />
+        <label class="hero_dark">Email</label> <br />
         <input type="email" id="email" placeholder="Enter Your Email" /> <br />
-        <span id="error"></span>
-        <label  class="hero_dark">How we can help you</label>
+        <span class="forget hero_dark" id="error">email is not valid</span>
+        <br />
+        <label class="hero_dark">How we can help you</label>
         <textarea placeholder="Enter Your Message"></textarea> <br />
         <button onclick="check()">send</button>
       </form>
-      
     </section>
 
     <footer>
