@@ -477,8 +477,13 @@
   border: none;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+#error {
+  color: red;
+  display: none;
+  padding-left: 40px;
+}
 
-form button{
+form button {
   margin-top: 12px;
 }
 .box-section button {
@@ -492,9 +497,8 @@ form button{
   text-transform: capitalize;
   cursor: pointer;
 }
-form a{
+form a {
   padding-left: 35px;
-  
 }
 .boxi1 {
   padding: 4%;

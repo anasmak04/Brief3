@@ -73,7 +73,14 @@ a {
 
 .support {
   text-align: center;
-  height: 700px;
+  height: auto;
+  padding: 20px;
+}
+
+#error{
+  padding-left: 40px;
+  color: red;
+  display: none;
 }
 
 .support h1 {
@@ -86,11 +93,12 @@ a {
 
 form {
   max-width: 800px;
-  height: 500px;
+  height: auto;
   text-align: start;
   margin: 0 auto;
   display: block;
   padding-top: 40px;
+  padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 

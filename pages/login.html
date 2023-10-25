@@ -26,7 +26,6 @@
     <link rel="stylesheet" type="text/css" href="../css/login.css" />
   </head>
   <body>
-    
     <header class="open">
       <nav>
         <div class="nav2">
@@ -118,11 +117,14 @@
 
       <form class="form">
         <label>Name</label> <br />
-        <input type="text" placeholder="Enter Your Name : " id="name"/> <br />
+        <input type="text" placeholder="Enter Your Name : " id="name" /> <br />
+        <span class="forget hero_dark" id="error">name is not valid</span>
+        <br />
         <label>Password</label> <br />
-        <input type="password" placeholder="Enter Your Email" id="password"/> <br />
+        <input type="password" placeholder="Enter Your Email" id="password" />
+        <br />
         <a href="#" class="forget hero_dark">Forget you password ? </a>
-        <button class="login">Login</button>
+        <button class="login" onclick="saveData()">Login</button>
       </form>
     </section>
 
