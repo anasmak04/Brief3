@@ -42,8 +42,8 @@ theme_toggler.addEventListener("click", function () {
   let github = document.querySelectorAll("#github");
   let verified = document.querySelectorAll("#verified");
   if (document.body.classList.contains("dark_mode")) {
-    iconElement.classList.remove("fa-sun");
-    iconElement.classList.add("fa-star");
+    iconElement.classList.remove("fa-moon");
+    iconElement.classList.add("fa-sun");
     lockIcon.forEach((item) => {
       item.src = "/images/padlock.png";
     });
@@ -69,8 +69,8 @@ theme_toggler.addEventListener("click", function () {
       item.src = "/images/check-white.png";
     });
   } else {
-    iconElement.classList.remove("fa-star");
-    iconElement.classList.add("fa-sun");
+    iconElement.classList.remove("fa-sun");
+    iconElement.classList.add("fa-moon");  
     lockIcon.forEach((item) => {
       item.src = "/images/lock.svg";
     });
@@ -109,4 +109,33 @@ menuItems.forEach((item) => {
   item.addEventListener("click", function () {
     flexMenu.classList.remove("open");
   });
+});
+
+
+
+
+const next = document.querySelector(".next");
+const prev = document.querySelector(".prev");
+const slide = document.querySelectorAll(".block");
+var i = 0;
+
+prev.addEventListener("click", () => {
+    slide[i].classList.remove("active");
+    i--;
+  
+    if (i < 0) {
+      i = slide.length - 1;
+    }
+    slide[i].classList.add("active");
+});
+
+next.addEventListener("click", () => {
+    slide[i].classList.remove("active");
+    i++;
+  
+    if (i >= slide.length) {
+      i = 0;
+    }
+  
+    slide[i].classList.add("active");
 });

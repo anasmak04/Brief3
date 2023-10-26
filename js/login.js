@@ -18,18 +18,11 @@ window.onclick = function (event) {
 /// form de validation
 let password = document.getElementById("password").value;
 let namee = document.getElementById("name").value;
-let email = document.getElementById("email").value;
 const error = document.getElementById("error");
 const form = document.querySelector(".form");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   if (namee == "" || namee !== "/^[a-zA-Z ]+$/") {
-    error.style.display = "block";
-  }
-  if (
-    email == "" ||
-    email !== "/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+.[A-Za-z]{2,4}$/"
-  ) {
     error.style.display = "block";
   } else {
     error.style.display = "none";
@@ -55,8 +48,8 @@ theme_toggler.addEventListener("click", function () {
   let github = document.querySelectorAll("#github");
   let verified = document.querySelectorAll("#verified");
   if (document.body.classList.contains("dark_mode")) {
-    iconElement.classList.remove("fa-sun");
-    iconElement.classList.add("fa-star");
+    iconElement.classList.remove("fa-moon");
+    iconElement.classList.add("fa-sun");
     lockIcon.forEach((item) => {
       item.src = "/images/padlock.png";
     });
@@ -82,8 +75,8 @@ theme_toggler.addEventListener("click", function () {
       item.src = "/images/check-white.png";
     });
   } else {
-    iconElement.classList.remove("fa-star");
-    iconElement.classList.add("fa-sun");
+    iconElement.classList.remove("fa-sun");
+    iconElement.classList.add("fa-moon");
     lockIcon.forEach((item) => {
       item.src = "/images/lock.svg";
     });

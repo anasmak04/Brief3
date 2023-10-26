@@ -41,9 +41,8 @@ theme_toggler.addEventListener('click', function(){
     let verified = document.querySelectorAll('#verified');
   
     if (document.body.classList.contains('dark_mode')) {
-
-        iconElement.classList.remove('fa-sun');
-        iconElement.classList.add('fa-star');
+      iconElement.classList.remove("fa-moon");
+      iconElement.classList.add("fa-sun");
 
         lockIcon.forEach((item) => {
           item.src = '/images/padlock.png';
@@ -79,8 +78,8 @@ theme_toggler.addEventListener('click', function(){
         })
     } else {
 
-        iconElement.classList.remove('fa-star');
-        iconElement.classList.add('fa-sun');
+        iconElement.classList.remove("fa-sun");
+        iconElement.classList.add("fa-moon");  
         lockIcon.forEach((item) => {
           item.src = '/images/lock.svg';
         })
